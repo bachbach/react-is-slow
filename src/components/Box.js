@@ -9,7 +9,7 @@ class Box extends Component {
     console.log('Box rendered')
     return (
       <div>
-        <span>clicked: {this.props.click}</span>
+        <span>clicked: {this.props.clicks}</span>
         <Paragraph options={this.bodyOptions}/>
       </div>
     )
@@ -17,7 +17,7 @@ class Box extends Component {
 }
 
 Box.propTypes = {
-  click: PropTypes.number
+  clicks: PropTypes.number
 }
 
 export default Box

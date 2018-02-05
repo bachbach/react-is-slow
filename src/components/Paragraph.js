@@ -23,6 +23,9 @@ Paragraph.propTypes = {
 
 export default Paragraph
 
+/**
+ * Note, this part is presentation, it works the same as component above
+ */
 // import React, { PureComponent } from 'react'
 // import PropTypes from 'prop-types'
 //

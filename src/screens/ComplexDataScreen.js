@@ -3,16 +3,16 @@ import Box from 'components/Box'
 
 class ComplexDataScreen extends Component {
   state = {
-    click: 0
+    clicks: 0
   }
 
-  handleClick = () => this.setState({ click: ++this.state.click })
+  handleClick = () => this.setState({ clicks: ++this.state.clicks })
 
   render () {
     return (
       <div>
         <button onClick={this.handleClick}>refresh component</button>
-        <Box click={this.state.click} />
+        <Box clicks={this.state.clicks} />
       </div>
     )
   }
