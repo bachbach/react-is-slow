@@ -11,12 +11,12 @@ export default function () {
     lastName: faker.name.lastName(),
     email: faker.internet.email(),
     age: Math.floor((Math.random() * 80) + 20),
-    job: {
+    address: {
       id: faker.random.uuid(),
       userId,
-      jobDescriptor: faker.name.jobDescriptor(),
-      jobArea: faker.name.jobArea(),
-      jobType: faker.name.jobType()
+      streetAddress: faker.address.streetAddress(),
+      city: faker.address.city(),
+      country: faker.address.country()
     }
   }
 }

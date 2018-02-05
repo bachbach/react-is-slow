@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import JobDetails from 'connectors/JobConnector'
+import AddressConnector from 'connectors/AddressConnector'
 import './UserDetails.css'
 
 class User extends Component {
@@ -16,7 +16,7 @@ class User extends Component {
         <div className='user-details--item'>{user.email}</div>
         <div className='user-details--item'>{user.age}</div>
         <button onClick={this.updateUser}>update user</button>
-        <JobDetails userId={user.id}/>
+        <AddressConnector userId={user.id}/>
       </div>
     )
   }

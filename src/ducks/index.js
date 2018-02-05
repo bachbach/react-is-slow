@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 import users from './users'
-import jobs from './jobs'
+import addresses from './addresses'
 
 const appReducer = combineReducers({
   users,
-  jobs
+  addresses
 })
 
 const rootReducer = (state, action) => {

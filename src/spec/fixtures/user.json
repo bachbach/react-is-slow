@@ -2,9 +2,9 @@
   "firstName": "test",
   "lastName": "test",
   "email": "test@desmart.com",
-  "job": {
-    "jobDescriptor": "test",
-    "jobArea": "test",
-    "jobType": "test"
+  "address": {
+    "streetAddress": "test",
+    "city": "test",
+    "country": "test"
   }
 }
