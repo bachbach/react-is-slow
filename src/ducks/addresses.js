@@ -1,4 +1,4 @@
-import { transformById, transformToArray } from 'helpers/redux';
+import { transformById, transformToArray } from 'helpers/redux'
 import { FETCH_USERS } from './users'
 
 export const UPDATE_ADDRESS = Symbol('UPDATE_ADDRESS')

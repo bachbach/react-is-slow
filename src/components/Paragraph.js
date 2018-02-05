@@ -1,48 +1,48 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-class BoxBody extends Component {
+class Paragraph extends Component {
   shouldComponentUpdate (nextProps) {
     return nextProps.options !== this.props.options
   }
 
   render () {
-    console.log('BoxBody rendered')
+    console.log('Paragraph rendered')
     return (
-      <div style={this.props.options.style}>{this.props.options.text}</div>
+      <p style={this.props.options.style}>{this.props.options.text}</p>
     )
   }
 }
 
-BoxBody.propTypes = {
+Paragraph.propTypes = {
   options: PropTypes.shape({
     text: PropTypes.string,
     style: PropTypes.object
   })
 }
 
-export default BoxBody
+export default Paragraph
 
 // import React, { PureComponent } from 'react'
 // import PropTypes from 'prop-types'
 //
-// class BoxBody extends PureComponent {
+// class Paragraph extends PureComponent {
 //   render () {
-//     console.log('BoxBody rendered')
+//     console.log('Paragraph rendered')
 //     return (
 //       <div style={this.props.options.style}>{this.props.options.text}</div>
 //     )
 //   }
 // }
 //
-// BoxBody.propTypes = {
+// Paragraph.propTypes = {
 //   options: PropTypes.shape({
 //     text: PropTypes.string,
 //     style: PropTypes.object
 //   })
 // }
 //
-// export default BoxBody
+// export default Paragraph
 
 
 
@@ -50,18 +50,18 @@ export default BoxBody
 // import pure from 'recompose/pure'
 // import PropTypes from 'prop-types'
 //
-// const BoxBody = (props) => {
-//   console.log('BoxBody rendered')
+// const Paragraph = (props) => {
+//   console.log('Paragraph rendered')
 //   return (
 //     <div style={props.options.style}>{props.options.text}</div>
 //   )
 // }
 //
-// BoxBody.propTypes = {
+// Paragraph.propTypes = {
 //   options: PropTypes.shape({
 //     text: PropTypes.string,
 //     style: PropTypes.object
 //   })
 // }
 //
-// export default pure(BoxBody)
+// export default pure(Paragraph)

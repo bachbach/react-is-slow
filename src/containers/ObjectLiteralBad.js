@@ -1,26 +1,21 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Box from 'components/Box'
 
 class ObjectLiteralBad extends Component {
   state = {
-    clickedTimes: 0
+    click: 0
   }
 
-  handleClick = () => this.setState({ clickedTimes: ++this.state.clickedTimes })
+  handleClick = () => this.setState({ click: ++this.state.click })
 
   render () {
     return (
       <div>
         <button onClick={this.handleClick}>refresh component</button>
-        <Box clickedTimes={this.state.clickedTimes} />
+        <Box click={this.state.click} />
       </div>
     )
   }
-}
-
-ObjectLiteralBad.propTypes = {
-
 }
 
 export default ObjectLiteralBad
