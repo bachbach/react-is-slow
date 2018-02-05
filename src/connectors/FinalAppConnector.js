@@ -1,9 +1,9 @@
 import { connect } from 'react-redux'
 import { fetchUsers, } from 'ducks/users'
-import SelectorBad from 'containers/SelectorBad'
+import FinalAppScreen from 'screens/FinalAppScreen'
 
 const mapDispatchToProps = dispatch => ({
   fetchUsers: () => dispatch(fetchUsers())
 })
 
-export default connect(null, mapDispatchToProps)(SelectorBad)
+export default connect(null, mapDispatchToProps)(FinalAppScreen)

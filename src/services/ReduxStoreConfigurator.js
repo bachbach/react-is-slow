@@ -6,7 +6,6 @@ import rootReducer from 'ducks/index'
 class ReduxStoreConfigurator {
   constructor () {
     this.middlewares = [thunkMiddleware]
-    console.log('???')
     // if (process.env.NODE_ENV === 'development') {
       this.middlewares.push(createLogger())
     // }

@@ -10,8 +10,6 @@ export const UPDATE_USER = Symbol('UPDATE_USER')
 
 const fetchUsersSuccess = users => ({ type: FETCH_USERS, users })
 
-const fetchUserSuccess = user => ({ type: FETCH_USER, user })
-
 const updateUserSuccess = user => ({ type: UPDATE_USER, user })
 
 export const fetchUsers = () => {
@@ -31,12 +29,6 @@ export const updateUser = (user) => {
   }
 }
 
-export const fetchUser = () => {
-  return dispatch => {
-    return dispatch(fetchUserSuccess(userFactory()))
-  }
-}
-
 const initState = {
   entries: {}
 }
@@ -48,7 +40,7 @@ export default (state = initState, action) => {
         ...state,
         entries: {
           ...state.entries,
-          ...transformById(action.users.map(user => (omit(['job'], user))))
+          ...transformById(action.users.map(user => (omit(['address'], user))))
         }
       }
     case FETCH_USER:

@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import createBrowserHistory from 'history/createBrowserHistory'
 import App from 'layouts/App'
-import { DataStructureExample, SelectorsExample, ObjectLiteralsExample } from 'screens'
+import FinalAppConnector from 'connectors/FinalAppConnector'
+import ComplexDataScreen from 'screens/ComplexDataScreen'
 import storeConfigurator from 'services/ReduxStoreConfigurator'
 
 const store = storeConfigurator.configureStore()
@@ -15,9 +16,8 @@ const AppRouter = () => (
     <Router history={history}>
       <App>
         <Switch>
-          <Route path='/object-literals' component={ObjectLiteralsExample} />
-          <Route path='/selectors' component={SelectorsExample} />
-          <Route path='/data-structure' component={DataStructureExample} />
+          <Route path='/complex-data' component={ComplexDataScreen} />
+          <Route path='/final-app' component={FinalAppConnector} />
         </Switch>
       </App>
     </Router>

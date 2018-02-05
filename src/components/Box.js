@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import BoxBody from 'components/BoxBody'
+import Paragraph from 'components/Paragraph'
 
 class Box extends Component {
   bodyOptions = { text: 'Hello world', style: { marginTop: 10 } }
@@ -9,15 +9,15 @@ class Box extends Component {
     console.log('Box rendered')
     return (
       <div>
-        <span>clicked times: {this.props.clickedTimes}</span>
-        <BoxBody options={this.bodyOptions}/>
+        <span>clicked: {this.props.clicks}</span>
+        <Paragraph options={this.bodyOptions}/>
       </div>
     )
   }
 }
 
 Box.propTypes = {
-  clickedTimes: PropTypes.number
+  clicks: PropTypes.number
 }
 
 export default Box

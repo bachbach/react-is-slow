@@ -12,13 +12,10 @@ class App extends Component {
         </header>
         <div className='app--navigation'>
           <div className='app--navigation--item'>
-            <Link to='/object-literals'>Object literals</Link>
+            <Link to='/complex-data'>Complex data example</Link>
           </div>
           <div className='app--navigation--item'>
-            <Link to='/selectors'>Selectors</Link>
-          </div>
-          <div className='app--navigation--item'>
-            <Link to='/data-structure'>Data structure</Link>
+            <Link to='/final-app'>Final app</Link>
           </div>
         </div>
         {this.props.children}
