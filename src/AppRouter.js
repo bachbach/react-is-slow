@@ -4,8 +4,7 @@ import { Provider } from 'react-redux'
 import createBrowserHistory from 'history/createBrowserHistory'
 import App from 'layouts/App'
 import FinalAppConnector from 'connectors/FinalAppConnector'
-import ObjectLiteralsExample from 'screens/ObjectLiteralsExample'
-
+import ComplexDataScreen from 'screens/ComplexDataScreen'
 import storeConfigurator from 'services/ReduxStoreConfigurator'
 
 const store = storeConfigurator.configureStore()
@@ -17,7 +16,7 @@ const AppRouter = () => (
     <Router history={history}>
       <App>
         <Switch>
-          <Route path='/object-literals' component={ObjectLiteralsExample} />
+          <Route path='/complex-data' component={ComplexDataScreen} />
           <Route path='/final-app' component={FinalAppConnector} />
         </Switch>
       </App>

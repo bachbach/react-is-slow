@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Box from 'components/Box'
 
-class ObjectLiteralBad extends Component {
+class ComplexDataScreen extends Component {
   state = {
     click: 0
   }
@@ -18,4 +18,4 @@ class ObjectLiteralBad extends Component {
   }
 }
 
-export default ObjectLiteralBad
+export default ComplexDataScreen
