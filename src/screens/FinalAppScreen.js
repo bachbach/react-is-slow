@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import UsersList from 'connectors/UsersConnector'
 
-class SelectorBad extends Component {
+class FinalAppScreen extends Component {
 
   render () {
     return (
@@ -13,4 +13,4 @@ class SelectorBad extends Component {
   }
 }
 
-export default SelectorBad
+export default FinalAppScreen
