@@ -5,7 +5,7 @@ import { getUserById } from 'selectors/users'
 import { updateUser } from 'ducks/users'
 
 const mapStateToProps = (state, ownProps) => ({
-  user: getUserById(state, ownProps.userId)
+  user: state.users.entries[ownProps.userId]
 })
 
 const mapDispatchToProps = (dispatch) => ({

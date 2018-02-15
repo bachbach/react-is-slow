@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import faker from 'faker'
 import AddressDetails from 'components/AddressDetails'
-import { getAddressByUserId } from 'selectors/jobs'
+import { getAddressByUserId } from 'selectors/addresses'
 import { updateAddress } from 'ducks/addresses'
 
 const mapStateToProps = (state, ownProps) => ({
