@@ -6,7 +6,7 @@ class AddressDetails extends Component {
 
   render () {
     const { address } = this.props
-    console.log('render address')
+    console.log('%c address', 'color: #ed3b44;')
 
     return (
       <div>

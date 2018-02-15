@@ -5,7 +5,7 @@ import { getAddressByUserId } from 'selectors/jobs'
 import { updateAddress } from 'ducks/addresses'
 
 const mapStateToProps = (state, ownProps) => ({
-  address: getAddressByUserId(ownProps.userId)(state)
+  address: getAddressByUserId(state, ownProps.userId)
 })
 
 const mapDispatchToProps = dispatch => ({

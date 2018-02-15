@@ -8,7 +8,7 @@ class User extends Component {
 
   render () {
     const { user } = this.props
-    console.log('render user')
+    console.log('%c user', 'color: #ed3b44;')
     return (
       <div className='user-details'>
         <div className='user-details--item'>{user.firstName}</div>
@@ -16,7 +16,7 @@ class User extends Component {
         <div className='user-details--item'>{user.email}</div>
         <div className='user-details--item'>{user.age}</div>
         <button onClick={this.updateUser}>update user</button>
-        <AddressConnector userId={user.id}/>
+        <AddressConnector userId={user.id} />
       </div>
     )
   }

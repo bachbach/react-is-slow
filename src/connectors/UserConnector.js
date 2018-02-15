@@ -8,7 +8,7 @@ const mapStateToProps = (state, ownProps) => ({
   user: getUserById(state, ownProps.userId)
 })
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   updateUser: (id) => dispatch(updateUser({ id, firstName: faker.name.firstName() }))
 })
 

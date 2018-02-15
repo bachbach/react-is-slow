@@ -5,7 +5,7 @@ import User from 'connectors/UserConnector'
 const UsersList = (props) => {
   return (
     <div className='container'>
-      { props.users.map(user => <User key={user.id} userId={user.id}/>) }
+      { props.users.map(user => <User key={user.id} userId={user.id} />) }
     </div>
   )
 }
