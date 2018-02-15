@@ -4,8 +4,6 @@ import AddressConnector from 'connectors/AddressConnector'
 import './UserDetails.css'
 
 class User extends Component {
-  updateUser = () => this.props.updateUser(this.props.user.id)
-
   render () {
     const { user } = this.props
     console.log('render user')
@@ -15,8 +13,8 @@ class User extends Component {
         <div className='user-details--item'>{user.lastName}</div>
         <div className='user-details--item'>{user.email}</div>
         <div className='user-details--item'>{user.age}</div>
-        <button onClick={this.updateUser}>update user</button>
-        <AddressConnector userId={user.id}/>
+        <button onClick={this.props.updateUser}>update user</button>
+        <AddressConnector userId={user.id} />
       </div>
     )
   }
