@@ -8,8 +8,8 @@ const mapStateToProps = (state, ownProps) => ({
   user: getUserById(state, ownProps.userId)
 })
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
-  updateUser: () => dispatch(updateUser({ id: ownProps.userId, firstName: faker.name.firstName() }))
+const mapDispatchToProps = (dispatch) => ({
+  updateUser: (id) => dispatch(updateUser({ id, firstName: faker.name.firstName() }))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(User)

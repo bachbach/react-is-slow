@@ -52,7 +52,6 @@ export default (state = initState, action) => {
         }
       }
     case UPDATE_USER:
-      console.log('action', action)
       return {
         ...state,
         entries: {
