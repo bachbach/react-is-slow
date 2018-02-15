@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 class AddressDetails extends Component {
-  updateAddress = (id) => () => this.props.updateAddress(id)
+  updateAddress = () => this.props.updateAddress(this.props.address.id)
 
   render () {
     const { address } = this.props
@@ -13,7 +13,7 @@ class AddressDetails extends Component {
         <div>{address.streetAddress}</div>
         <div>{address.city}</div>
         <div>{address.country}</div>
-        <button onClick={this.updateAddress(address.id)}>update address</button>
+        <button onClick={this.updateAddress}>update address</button>
       </div>
     )
   }
