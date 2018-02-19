@@ -9,6 +9,8 @@ class ReduxStoreConfigurator {
     this.middlewares = [thunkMiddleware]
     if (process.env.NODE_ENV === 'development') {
       this.middlewares.push(createLogger())
+      const { whyDidYouUpdate } = require('why-did-you-update')
+      whyDidYouUpdate(React)
     }
   }
 

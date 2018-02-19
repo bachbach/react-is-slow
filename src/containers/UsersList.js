@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import User from 'connectors/UserConnector'
+import UserConnector from 'connectors/UserConnector'
 
 const UsersList = (props) => {
   return (
     <div className='container'>
-      { props.users.map(user => <User key={user.id} userId={user.id} />) }
+      { props.users.map(user => <UserConnector key={user.id} user={user} />) }
     </div>
   )
 }

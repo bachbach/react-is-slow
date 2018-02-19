@@ -38,14 +38,14 @@ export default Paragraph
 //   }
 // }
 //
+// export default Paragraph
+//
 // Paragraph.propTypes = {
 //   options: PropTypes.shape({
 //     text: PropTypes.string,
 //     style: PropTypes.object
 //   })
 // }
-//
-// export default Paragraph
 
 
 

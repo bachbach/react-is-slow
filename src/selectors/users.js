@@ -1,19 +1,14 @@
 import { createSelector } from 'reselect'
-import { transformToArray } from 'helpers/redux'
+import { veryAdvancedCalculation } from 'helpers/redux'
 
-export const getUsers = state => transformToArray(state.users.entries)
+export const getUsers = state => state.users.entries
 
-export const userId = (state, id) => state.users.entries[id]
+export const getAddresses = state => state.addresses.entries
 
-export const getUserById = createSelector(
-  [userId],//
-  (user) => user
-)
-
-export const sortUsersByAge = createSelector(
-  getUsers,
-  users => {
+export const sortUsersByEverything = createSelector(
+  [getUsers, getAddresses],
+  (users, addresses) => {
     console.log('sort triggered')
-    return users.sort((a, b) => a.age - b.age)
+    return veryAdvancedCalculation(users, addresses)
   }
 )

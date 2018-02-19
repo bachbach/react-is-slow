@@ -8,6 +8,7 @@ class User extends Component {
 
   render () {
     const { user } = this.props
+
     console.log('%c user', 'color: #ed3b44;')
     return (
       <div className='user-details'>
